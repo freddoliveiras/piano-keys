@@ -1,13 +1,11 @@
 // The keys and notes variables store the piano keys
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
 
-
 keys.forEach(function(key){
   document.getElementById(key).onmousedown = () => document.getElementById(key).style.backgroundColor = 'red';
   document.getElementById(key).onmouseup = () => document.getElementById(key).style.backgroundColor = '';
   document.getElementById(key).onmouseout = () => document.getElementById(key).style.backgroundColor = '';
 })
-
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
@@ -30,7 +28,6 @@ nextOne.onclick = function(){
 
   document.getElementById('letter-note-five').innerHTML = 'D';
   document.getElementById('letter-note-six').innerHTML = 'C';
-  
 }
 
 // Write anonymous event handler property and function for the second progress button
